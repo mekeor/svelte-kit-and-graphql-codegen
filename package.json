@@ -1,0 +1,41 @@
+{
+  "name": "example",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "lint": "prettier --check . && eslint --ignore-path .gitignore .",
+    "format": "prettier --write .",
+    "type-schema": "graphql-codegen --config graphql-codegen.yml"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.21.4",
+    "@graphql-codegen/introspection": "1.18.2",
+    "@graphql-codegen/typescript": "1.22.0",
+    "@graphql-codegen/typescript-graphql-request": "^3.1.1",
+    "@graphql-codegen/typescript-operations": "^1.17.16",
+    "@sveltejs/kit": "next",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-svelte3": "^3.2.0",
+    "graphql": "^15.5.0",
+    "prettier": "^2.2.1",
+    "prettier-plugin-svelte": "^2.2.0",
+    "svelte": "^3.29.0",
+    "svelte-preprocess": "^4.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0",
+    "vite": "^2.2.3",
+    "vite-plugin-windicss": "^0.15.7",
+    "windicss": "^2.5.14"
+  },
+  "type": "module",
+  "dependencies": {
+    "@sveltejs/adapter-node": "next",
+    "graphql-request": "^3.4.0",
+    "graphql-tag": "^2.11.0"
+  }
+}

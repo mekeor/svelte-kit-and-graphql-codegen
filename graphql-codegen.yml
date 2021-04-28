@@ -1,0 +1,10 @@
+overwrite: true
+schema: "https://XXX/graphql"
+documents: "src/queries/manually-typed/*.graphql"
+generates:
+  src/queries/automatically-typed.ts:
+    plugins:
+      - "typescript"
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"

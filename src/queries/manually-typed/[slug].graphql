@@ -1,0 +1,8 @@
+query SLUG($slug: String!) {
+  pages(where: { slug: $slug }) {
+    foo
+    bar
+    baz
+    qux
+  }
+}
